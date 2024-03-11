@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, Image, FlatList } from 'react-native'
+import { View, Text, TextInput, TouchableOpacity, Image, FlatList } from "react-native";
 import { useRouter } from "expo-router";
 
-import styles from "./welcome.style"
+import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
 
 const jobTypes = ["Full-time", "Part-time", "Contractor"];
@@ -23,7 +23,7 @@ const Welcome = () => {
           <TextInput
             style={styles.searchInput}
             value=""
-            onChange={() => {}}
+            onChangeText={() => {}}
             placeholder="What are you looking for?"
           />
         </View>
@@ -31,13 +31,13 @@ const Welcome = () => {
         <TouchableOpacity style={styles.searchBtn} onPress={() => {}}>
           <Image
             source={icons.search}
-            resizeMode="contain"
+            resizeMode='contain'
             style={styles.searchBtnImage}
           />
         </TouchableOpacity>
       </View>
 
-      <View style={styles.tabConatiner}>
+      <View style={styles.tabsContainer}>
         <FlatList
           data={jobTypes}
           renderItem={({ item }) => (
@@ -51,13 +51,13 @@ const Welcome = () => {
               <Text style={styles.tabText(activeJobType, item)}>{item}</Text>
             </TouchableOpacity>
           )}
-          keyExtractor={item => item}
+          keyExtractor={(item) => item}
           contentContainerStyle={{ columnGap: SIZES.small }}
           horizontal
         />
       </View>
     </View>
-  )
-}
+  );
+};
 
-export default Welcome
+export default Welcome;
