@@ -1,7 +1,5 @@
 # React Native Job Finder App 🚀
 
-![React Native Job Finder Logo](your-logo-url.png)
-
 Welcome to the React Native Job Finder app! This app helps you discover job opportunities in the React Native ecosystem. Powered by Expo Router, our app provides a seamless navigation experience while you explore various job listings.
 
 ## Features 📋
@@ -17,20 +15,19 @@ To run the React Native Job Finder app locally on your machine, follow these ste
 
 1. Clone this repository to your local machine:
 
-git clone https://github.com/andrewgindi/React-Native-Jobs
+`git clone https://github.com/andrewgindi/React-Native-Jobs`
 
 2. Navigate to the project directory:
 
-cd react-native-job-finder
+`cd react-native-job-finder`
 
 3. Install the dependencies using npm or yarn:
 
-npm install or yarn install
+`npm install` or `yarn install`
 
 4. Start the Expo development server:
 
-npm start or yarn start
-
+`npm start` or `yarn start`
 
 5. Open the Expo Go app on your iOS or Android device.
 6. Scan the QR code displayed in the terminal or the Expo DevTools to open the app.
